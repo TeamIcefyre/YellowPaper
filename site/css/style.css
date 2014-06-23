@@ -1,0 +1,135 @@
+﻿body {
+    background-color: #242424;
+}
+
+#header {
+    height: 380px;
+    width: 1920px;
+    background-color: #F7DC15;
+}
+
+section {
+    width: 1920px;
+    margin-bottom: 210px;
+}
+
+#sectionHeader {
+    height: 140px;
+    width: 2100px;
+    background-color: #202020;       
+}
+
+#rotate {
+    height: 140px;
+    width: 2100px;
+    transform: rotate(-2.5deg);
+    -ms-transform: rotate(-2.5deg); /* IE 9 */
+    -webkit-transform: rotate(-2.5deg); /* Opera, Chrome, and Safari */
+    position: absolute;
+    top: 335px;
+    left: -50px; 
+}
+
+article {
+    height: 800px;
+    width: 1500px;
+    margin-left: 210px;
+    background-color: #BBA175;
+}
+
+footer {
+    height: 500px;
+    width: 1920px;
+    background-color: #0E0E0E;
+}
+
+h1 {
+    font-size: 150px;
+    line-height: 150px;
+    font-family: "Rockwell Condensed", Georgia, Serif;
+    padding-top: 60px;
+    padding-left: 60px;
+}
+
+h2 {
+    font-size: 60px;
+    line-height: 60px;
+    font-family: "Rockwell Condensed", Georgia, Serif;
+    padding-top: 20px;
+    padding-left: 190px;
+}
+
+h3 {
+    font-size: 72px;
+    line-height: 72px;
+    font-family: "Segoe UI", Georgia, Serif;
+    color: #ffffff;
+    font-weight: lighter;
+    text-align: center;
+
+}
+
+ul {
+    margin-left: 130px;
+}
+
+li {
+    height: 140px;
+    width: 330px;
+    display: inline-block;
+}
+
+dl {
+    color: #ffffff;
+    height: 348px;
+    width: 420px;
+    display: inline-block;
+    padding-top: 80px;
+}
+
+#firstList {
+    margin-left: 75px;
+}
+
+dt {
+    font-size: 48px;
+    font-family: "Segoe UI", Georgia, Serif;
+    color: #ffffff;
+    font-weight: lighter;
+    padding: 15px;
+}
+
+dd {    
+    padding: 15px;
+}
+
+.headerMenu {
+    height: 100px;
+    width: 100%;
+    display: block;
+    font-size: 60px;
+    text-align: center;
+    font-family: "Rockwell Condensed", Georgia, Serif;
+    text-decoration: none;
+    padding-top: 40px;
+    background-color: #202020;
+    color: #F5D20A;
+}
+
+.personalInfo {
+    font-size: 34px;
+    font-family: "Segoe UI", Georgia, Serif;
+    color: #ffffff;
+    font-weight: lighter;
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: #F5D20A;
+    color: #202020;
+}
+
+.personalInfo:hover {
+    background-color: #ffffff;
+    color: #202020;
+}
