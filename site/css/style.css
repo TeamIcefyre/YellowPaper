@@ -16,23 +16,46 @@ section {
     display: block;
 }
 
+#aboutUsSection {
+    height: 1250px;
+    width: 1500px;
+    margin: 40px 210px 210px 175px;
+    background-color: #BBA175;
+    display: block;
+}
+
 #rotate {
     height: 140px;
-    width: 2100px;
-    background-color: #202020;  
-    transform: rotate(-2.5deg);
+    width: 1920px;
+    background-color: #191919;  
+    transform: rotate(-2.5deg);   
     -ms-transform: rotate(-2.5deg); /* IE 9 */
     -webkit-transform: rotate(-2.5deg); /* Opera, Chrome, and Safari */
     position: absolute;
     top: 335px;
-    left: -50px; 
+    left: 0; 
 }
 
-article {
-    
-    
-    
-    
+#aboutUsArtcl {
+    height: 1000px;
+    width: 1250px;
+    padding: 125px;    
+}
+
+.aboutUsInfo {
+    margin-top: 30px;
+}
+
+.personalDescription {
+    height: 100%;
+    width: 950px;
+    margin-top: 10px;
+    display: inline-block;
+    float: right;
+    font-size: 30px;
+    font-family: Garamond, Georgia, Serif;
+    color: #000;
+    font-weight: bold;
 }
 
 footer {
@@ -61,10 +84,21 @@ h3 {
     font-size: 72px;
     line-height: 72px;
     font-family: "Segoe UI", Georgia, Serif;
-    color: #ffffff;
-    font-weight: lighter;
+    color: #fff;
+    font-weight: normal;
     text-align: center;
+}
 
+h4 {
+    font-size: 72px;
+    line-height: 72px;
+    font-family: Garamond, Georgia, Serif;
+    color: #000;
+    font-weight: bold;
+}
+
+figure {
+    display: inline-block;
 }
 
 ul {
@@ -78,7 +112,7 @@ li {
 }
 
 dl {
-    color: #ffffff;
+    color: #fff;
     height: 348px;
     width: 420px;
     display: inline-block;
@@ -92,7 +126,7 @@ dl {
 dt {
     font-size: 48px;
     font-family: "Segoe UI", Georgia, Serif;
-    color: #ffffff;
+    color: #fff;
     font-weight: lighter;
     padding: 15px;
 }
@@ -110,14 +144,14 @@ dd {
     font-family: "Rockwell Condensed", Georgia, Serif;
     text-decoration: none;
     padding-top: 40px;
-    background-color: #202020;
+    background-color: ##191919;
     color: #F5D20A;
 }
 
 .personalInfo {
     font-size: 34px;
     font-family: "Segoe UI", Georgia, Serif;
-    color: #ffffff;
+    color: #fff;
     font-weight: lighter;
     text-decoration: none;
 }
@@ -128,6 +162,6 @@ a:hover {
 }
 
 .personalInfo:hover {
-    background-color: #ffffff;
+    background-color: #fff;
     color: #202020;
 }
