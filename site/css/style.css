@@ -9,19 +9,17 @@
 }
 
 section {
-    width: 1920px;
-    margin-bottom: 210px;
-}
-
-#sectionHeader {
-    height: 140px;
-    width: 2100px;
-    background-color: #202020;       
+    height: 800px;
+    width: 1500px;
+    margin: 40px 210px 210px 175px;
+    background-color: #BBA175;
+    display: block;
 }
 
 #rotate {
     height: 140px;
     width: 2100px;
+    background-color: #202020;  
     transform: rotate(-2.5deg);
     -ms-transform: rotate(-2.5deg); /* IE 9 */
     -webkit-transform: rotate(-2.5deg); /* Opera, Chrome, and Safari */
@@ -31,10 +29,10 @@ section {
 }
 
 article {
-    height: 800px;
-    width: 1500px;
-    margin-left: 210px;
-    background-color: #BBA175;
+    
+    
+    
+    
 }
 
 footer {
