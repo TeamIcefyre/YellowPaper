@@ -2,87 +2,91 @@
     background-color: #242424;
 }
 
+#container {
+    width: 960px;
+    margin: 0 auto;
+}
+
 #header {
-    height: 380px;
-    width: 1920px;
+    height: 190px;
+    width: 100%;
     background-color: #F7DC15;
+}
+
+#rotate {
+    height: 70px;
+    width: 100%;
+    background-color: #191919;  
+    /*transform: rotate(-2.5deg);   
+    -ms-transform: rotate(-2.5deg);
+    -webkit-transform: rotate(-2.5deg);
+    position: absolute;
+    top: 335px;
+    left: 0;*/ 
 }
 
 section {
     height: 800px;
-    width: 1500px;
-    margin: 40px 210px 210px 175px;
+    width: 80%;
+    margin: 0 auto 100px;
     background-color: #BBA175;
     display: block;
 }
 
 #aboutUsSection {
-    height: 1250px;
-    width: 1500px;
-    margin: 40px 210px 210px 175px;
+    height: 625px;
+    width: 80%;
+    margin: 0 auto 100px;
     display: block;
 }
 
-#rotate {
-    height: 140px;
-    width: 1920px;
-    background-color: #191919;  
-    transform: rotate(-2.5deg);   
-    -ms-transform: rotate(-2.5deg); /* IE 9 */
-    -webkit-transform: rotate(-2.5deg); /* Opera, Chrome, and Safari */
-    position: absolute;
-    top: 335px;
-    left: 0; 
-}
-
 #aboutUsArtcl {
-    height: 1000px;
-    width: 1250px;
-    padding: 125px;   
+    height: 495px;
+    padding: 65px;   
     background-image: url('../img/aboutUsBackground.png');
 }
 
 .aboutUsInfo {
-    margin-top: 30px;
+    margin-top: 15px;
 }
 
 .personalDescription {
     height: 100%;
-    width: 950px;
-    margin-top: 10px;
+    width: 460px;
+    margin-top: 5px;
     display: inline-block;
     float: right;
-    font-size: 30px;
+    font-size: 15px;
     font-family: Garamond, Georgia, Serif;
     color: #000;
     font-weight: bold;
 }
 
 footer {
-    height: 500px;
-    width: 1920px;
+    height: 260px;
+    width: 100%;
     background-color: #0E0E0E;
 }
 
 h1 {
-    font-size: 150px;
-    line-height: 150px;
+    font-size: 70px;
+    line-height: 70px;
     font-family: "Rockwell Condensed", Georgia, Serif;
-    padding-top: 60px;
-    padding-left: 60px;
+    padding-top: 20px;
+    padding-left: 25px;
 }
 
 h2 {
-    font-size: 60px;
-    line-height: 60px;
+    font-size: 40px;
+    line-height: 40px;
     font-family: "Rockwell Condensed", Georgia, Serif;
-    padding-top: 20px;
-    padding-left: 190px;
+    padding-top: 15px;
+    padding-left: 80px;
 }
 
 h3 {
-    font-size: 72px;
-    line-height: 72px;
+    font-size: 45px;
+    line-height: 45px;
     font-family: "Segoe UI", Georgia, Serif;
     color: #fff;
     font-weight: normal;
@@ -90,8 +94,8 @@ h3 {
 }
 
 h4 {
-    font-size: 72px;
-    line-height: 72px;
+    font-size: 35px;
+    line-height: 35px;
     font-family: Garamond, Georgia, Serif;
     color: #000;
     font-weight: bold;
@@ -102,54 +106,58 @@ figure {
 }
 
 ul {
-    margin-left: 130px;
+    margin-left: 40px;
 }
 
 li {
-    height: 140px;
-    width: 330px;
+    height: 100%;
+    width: 175px;
     display: inline-block;
+}
+
+#footerContainer {
+    height: 215px;
+    width: 90%;
+    margin: 0 auto;
 }
 
 dl {
     color: #fff;
-    height: 348px;
-    width: 420px;
+    height: 195px;
+    width: 25%;
+    padding-top: 20px;
     display: inline-block;
-    padding-top: 80px;
-}
-
-#firstList {
-    margin-left: 75px;
+    float: left;
 }
 
 dt {
-    font-size: 48px;
+    font-size: 23px;
     font-family: "Segoe UI", Georgia, Serif;
     color: #fff;
     font-weight: lighter;
-    padding: 15px;
+    padding: 10px;
 }
 
 dd {    
-    padding: 15px;
+    padding: 5px;
+    padding-left: 10px;
 }
 
 .headerMenu {
-    height: 100px;
+    height: 50px;
     width: 100%;
     display: block;
-    font-size: 60px;
+    font-size: 30px;
     text-align: center;
     font-family: "Rockwell Condensed", Georgia, Serif;
     text-decoration: none;
-    padding-top: 40px;
-    background-color: ##191919;
+    padding-top: 20px;
+    background-color: #191919;
     color: #F5D20A;
 }
 
 .personalInfo {
-    font-size: 34px;
+    font-size: 20px;
     font-family: "Segoe UI", Georgia, Serif;
     color: #fff;
     font-weight: lighter;
