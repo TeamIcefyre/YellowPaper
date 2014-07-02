@@ -27,7 +27,7 @@
 
 main {
     width: 80%;
-    margin: 0 auto 100px;
+    margin: 0 auto;
     background-color: #BBA175;
     display: block;
 }
@@ -144,10 +144,17 @@ label {
     margin-top: 15px;
 }
 
+.aboutUsInfo::after{
+    content:"";
+    zoom:1;
+    display:block;
+    clear:both;
+}
+
 .personalDescription {
     height: 100%;
-    width: 460px;
-    margin-top: 5px;
+    width: 75%;
+    margin-top: 15px;
     display: inline-block;
     float: right;
     font-size: 15px;
@@ -248,6 +255,13 @@ li {
     margin: 0 auto;
 }
 
+#footerContainer::after{
+    content:"";
+    zoom:1;
+    display:block;
+    clear:both;
+}
+
 dl {
     color: #fff;
     height: 195px;
@@ -304,4 +318,116 @@ li > a:hover {
 .personalInfo:hover {
     background-color: #fff;
     color: #202020;
+}
+
+@media all and (max-width: 960px){
+    body #container{
+        width:100%;
+    }
+
+    body #container > header h1{
+        font-size: 7vw;
+    }
+
+    body #container > header h2{
+        font-size: 4vw;
+    }
+
+    body #container > nav ul{
+        margin:0;
+    }
+
+    body #container > nav ul li{
+        width:19%;
+    }
+
+    body #container > nav {
+        height: 100%;
+    }
+
+    body #container main section #contactsContainer{
+        width:40%;
+    }
+    
+    body #container main section #contactsContainer textarea{
+        width:100%;
+    }
+
+    body #container main section #mapContainer{
+        width:45%;
+    }
+}
+
+@media all and (max-width:780px){
+    body #container > header{
+        text-align: center;
+        height:100%;
+    }
+    body #container > header h1{
+        padding:0px;
+        font-size: 50px;
+    }
+
+    body #container > header h2{
+        padding:0px;
+        font-size: 30px;
+    }
+
+    body #container > nav ul li{
+        width:100%;
+    }
+
+    body #container textarea{
+        width:100%;
+    }
+
+    body #container main .aboutUsInfo{
+        display:block;
+        height:100%;
+    }
+
+    body #container main .aboutUsInfo div{
+        width:100%;
+    }
+
+    body #container main section article{
+        padding:10px;
+    }
+
+    body #container main section #contactsContainer{
+        width:100%;
+        text-align: center;
+    }
+
+    body #container main section #mapContainer{
+        width:100%;
+        text-align:center;
+        margin-top: 10px;
+        padding:0;
+    }
+
+    body #container main section #mapContainer img{
+        width:80%;
+        height:80%;
+    }
+}
+
+@media all and (max-width:640px){
+    body #container > footer{
+        height:100%;
+    }
+    body #container > footer dl{
+        width:48%;
+    }
+}
+
+@media all and (max-width:480px){
+   body #container > footer dl{
+        width:100%;
+        text-align:center;
+    }
+
+    body #container input{
+        width:100%;
+    }
 }
