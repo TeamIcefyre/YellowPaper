@@ -465,4 +465,8 @@ a.more {
     body #container input{
         width:100%;
     }
+
+    body #container .contact-us{
+        padding-left: 0px;
+    }
 }
