@@ -25,26 +25,26 @@ jQuery(document).ready(function($) {
         
     	// checking for some valid user name
     	if( !uname ) {
-    		$( '#namelabel' ).children( '.err' ).fadeIn( 'slow' );
+    		$( '#namelabel' ).closest('.fieldDiv').children( '.err' ).fadeIn( 'slow' );
     	}
     	else if( uname.length > 3 ) {
-    		$( '#namelabel' ).children( '.err' ).fadeOut( 'slow' );		
+    		$( '#namelabel' ).closest('.fieldDiv').children( '.err' ).fadeOut( 'slow' );		
     	}
     	
     	// checking for valid email
     	if( !checkValidEmailAddress( uemail ) ) {
-    		$( '#emailabel' ).children( '.err' ).fadeIn( 'slow' );
+    		$( '#emailabel' ).closest('.fieldDiv').children( '.err' ).fadeIn( 'slow' );
     	}
     	else if( checkValidEmailAddress( uemail ) ) {
-    		$( '#emailabel' ).children( '.err' ).fadeOut( 'slow' );	
+    		$( '#emailabel' ).closest('.fieldDiv').children( '.err' ).fadeOut( 'slow' );	
     	}
     	
     	// checking for valid message
     	if( !umsg ) {
-    		$( '#msglabel' ).children( '.err' ).fadeIn( 'slow' );
+    		$( '#msglabel' ).closest('.fieldDiv').children( '.err' ).fadeIn( 'slow' );
     	}
     	else if(umsg.length > 5) {
-    		$( '#msglabel' ).children( '.err' ).fadeOut( 'slow' );
+    		$( '#msglabel' ).closest('.fieldDiv').children( '.err' ).fadeOut( 'slow' );
     	}
     	
     	// ajax check for captcha code
@@ -56,10 +56,12 @@ jQuery(document).ready(function($) {
     			success: function( data ) {
     				if( data == 'false' ) {
     					mailsendstatus = false;
-    					$( '#captchalabel' ).children( '.err' ).fadeIn( 'slow' );
+    					$( '#captchalabel' ).closest('.fieldDiv').children( '.err' ).fadeIn( 'slow' );
+    					console.log('in the false');
+    					console.log($( '#captchalabel' ).closest('.fieldDiv').children( '.err' ));
     				}
     				else if( data == 'true' ){
-    					$( '#captchalabel' ).children( '.err' ).fadeOut( 'slow' );
+    					$( '#captchalabel' ).closest('.fieldDiv').children( '.err' ).fadeOut( 'slow' );
     					
     					if( uname.length > 3 && umsg.length > 5 && checkValidEmailAddress( uemail ) ) {
     						mailsendstatus = true;

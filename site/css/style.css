@@ -110,6 +110,7 @@ main {
 
 .fieldDiv {
     margin-top: 30px;
+    position: relative;
 }
 
 label {
@@ -328,14 +329,33 @@ a.more {
 }
 
 /** Story form stuff **/
-form .err { color: #fff; background: #9d5050; border-radius: 4px; display: none; position: relative; left: 330px; top: 25px; padding: 4px 7px; }
-form .capter { left: 280px !important; }
-form .txarea { left: 340px !important; }
-form .topp { left: 350px; }
+form {
+    display: block;
+    padding-bottom: 65px;    
+}
 
-form #captchaimg { display: block; border: 1px solid #a1a1a1; margin-bottom: 7px; }
+form small {
+    color: tomato;   
+}
+form .err { 
+    color: #fff; 
+    background: tomato; 
+    border-radius: 4px; 
+    font-size: 15px; 
+    display: none; 
+    position: absolute; 
+    top: -25px; 
+    padding: 4px 7px; 
+}
+
+form #captchaimg { 
+    display: block; 
+    border: 1px solid #a1a1a1; 
+    margin-left: 115px; 
+}
 
 form a.btn {
+    display: inline-block;
     background-color: #eee;
     background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #eee), color-stop(100%, #ccc));
     background-image: -webkit-linear-gradient(top, #eee, #ccc);
@@ -352,6 +372,7 @@ form a.btn {
     font-size: 1.4em;
     font-weight: bold;
     text-decoration: none;
+    margin-left: 115px;
     padding: 12px 22px;
     text-align: center;
     text-shadow: 0 1px 0 #eee;
@@ -519,6 +540,6 @@ form a.btn:active {
     }
 
     body #container .contact-us{
-        padding-left: 0px;
+        padding: 65px 0 0;
     }
 }

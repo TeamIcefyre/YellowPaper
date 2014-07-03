@@ -13,54 +13,42 @@
                         <div class="submitATipArtcl">
                             <form id="story-form" name="contact" method="post" action="" enctype="multipart/form-data">
                                 <input type="hidden" name="check" value="01">
-                                <small>*all form fields are required.</small>
+                                <small>*всичките полета са задължителни</small>
                                 
                                 <div class="fieldDiv">
-                                    <label for="name" id="namelabel">Име:<span class="err topp">въведи име</span></label>
-                                    <input type="text" name="name" id="name" class="textinput" autofocus tabindex="1" /><br />
+                                    <span class="err topp">въведи име</span>
+                                    <label for="name" id="namelabel">Име:</label>
+                                    <input type="text" name="name" id="name" class="textinput" autofocus tabindex="1" />
+                                    <br />
                                 </div>
                                 <div class="fieldDiv">
-                                    <label for="email" id="emailabel">E-mail:<span class="err topp">въведи валиден e-mail адрес</span></label>
-                                    <input type="email" name="email" id="email" class="textinput" tabindex="2" /><br />
+                                    <span class="err topp">въведи валиден e-mail адрес</span>
+                                    <label for="email" id="emailabel">E-mail:</label>
+                                    <input type="email" name="email" id="email" class="textinput" tabindex="2" />
+                                    <br />
                                 </div>
                                 <div class="fieldDiv">
-                                    <label for="message" id="msglabel">Съобщение:<span class="err txarea">сподели какво те вълнува</span></label>
-                                    <textarea name="message" id="message" class="msgtextarea" tabindex="3"></textarea><br />
+                                    <span class="err txarea">сподели какво те вълнува</span>
+                                    <label for="message" id="msglabel">Съобщение:</label>
+                                    <textarea name="message" id="message" class="msgtextarea" tabindex="3"></textarea>
+                                    <br />
                                 </div> 
                                 
-                                <img src="captcha.php" id="captchaimg">
-                                
                                 <div class="fieldDiv">
-                                    <label for="captcha" id="captchalabel">You're not a spammer, right?<span class="err capter">your CAPTCHA code looks wrong</span></label>
-                                    <input type="text" name="captchavalue" id="captchavalue" class="textcaptcha">
+                                    <img src="captcha.php" id="captchaimg">
+                                    <br />
                                 </div>
                                 
-                                <section id="btnwrapper">
+                                <div class="fieldDiv">
+                                    <span class="err capter">CAPTCHA-та изглежда грешна</span>
+                                    <label for="captcha" id="captchalabel">Не си спамър, нали? :)</label>
+                                    <input type="text" name="captchavalue" id="captchavalue" class="textcaptcha">
+                                    <br />
+                                </div>
+                                
+                                <div id="btnwrapper" class="fieldDiv">
                                     <a href="#" name="submitlink" id="submitlink" class="btn">Изпрати Съобщението</a>
-                                </section>
-                                
-                                <!---------------------------------------------------------
-                                <label for="name" id="namelabel">Name:<span class="err topp">enter your name</span></label>
-                                <input type="text" name="name" id="name" class="textinput">
-                                
-                                
-                                <label for="email" id="emailabel">E-mail:<span class="err topp">enter a valid e-mail address</span></label>
-                                <input type="email" name="email" id="email" class="textinput">
-                                
-                                
-                                <label for="message" id="msglabel">Message:<span class="err txarea">share some stuff with us</span></label>
-                                <textarea name="message" id="message" class="msgtextarea"></textarea>
-                                
-                                
-                                <img src="captcha.php" id="captchaimg">
-                                
-                                <label for="captcha" id="captchalabel">You're not a spammer, right?<span class="err capter">your CAPTCHA code looks wrong</span></label>
-                                <input type="text" name="captchavalue" id="captchavalue" class="textcaptcha">
-                                
-                                
-                                <section id="subber">
-                                <a href="javascript:void(0);" name="submitlink" id="submitlink" class="btn">Send Message</a>
-                                </section>-->
+                                </div>
                                                        
                             </form>
                         </div>
