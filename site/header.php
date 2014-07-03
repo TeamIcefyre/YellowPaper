@@ -3,6 +3,7 @@
 
     $type = substr( $page, 0, -5);
     $title = '';
+    $add_jquery = false;
     
     switch( $type ) {
         case 'index':
@@ -16,6 +17,7 @@
             break;
         case 'submitATip':
             $title = 'Жълтурче - Сподели История';
+            $add_jquery = true;
             break;
         case 'contacts':
             $title = 'Жълтурче - Контакти';
@@ -29,6 +31,10 @@
     <title><?php echo $title; ?></title>
     <link type="text/css" href="css/reset.css" rel="stylesheet" media="all" />
     <link type="text/css" href="css/style.css" rel="stylesheet" media="all" />
+    <?php if( $add_jquery ) : ?>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+        <script type="text/javascript" src="js/script.js"></script>
+    <?php endif; ?>
 </head>
 <body>
     <div id="container">
