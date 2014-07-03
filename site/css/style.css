@@ -1,5 +1,40 @@
-﻿body {
+﻿@font-face {
+    font-family: "Ristretto";
+    src: url('webfonts/ristretto.woff');
+}
+
+body {
     background-color: #242424;
+    font-family: "Ristretto", serif;
+    font-size: 18px;
+}
+
+.full-width {
+    width: 95.59%;
+    margin: 0 20px;
+}
+.one-third {
+    width: 29%;
+    margin: 0 20px;
+    float: left;
+}
+
+.two-thirds {
+    width: 62.36%;
+    margin: 0 20px;
+    float: left;
+}
+.clearfix::after {
+    content:"";
+    zoom:1;
+    display:block;
+    clear:both;
+}
+
+p {
+    letter-spacing: 1px;
+    line-height: 22px;
+    padding:  0 0 20px;
 }
 
 #container {
@@ -8,9 +43,16 @@
 }
 
 #header {
-    height: 190px;
+    /*height: 190px;*/
     width: 100%;
     background-color: #F7DC15;
+    padding: 15px 0;
+}
+
+header#header h2 {
+    margin-bottom: 15px;
+    padding-left: 80px;
+    
 }
 
 #rotate {
@@ -26,18 +68,19 @@
 }
 
 main {
-    width: 80%;
     margin: 0 auto;
     background-color: #BBA175;
     display: block;
 }
 
-.homeSection {
-
+.homeSection, 
+.article,
+.page {
+    padding: 15px;
 }
 
 .aboutUsSection {
-    background-image: url('../img/aboutUsBackground.png');
+    background: url('../img/aboutUsBackground.png') bottom right;
 }
 
 .ourMissionSection {
@@ -46,10 +89,13 @@ main {
 
 .submitATipSection {
     background-color: #545654;
-    font-family: Garamond, Georgia, Serif;
 }
 
-.submitATipSection > header > h4, h5 {
+.contact-us {
+    padding: 65px;
+}
+.contact-us h4, 
+.contact-us h5 {
     color: #FFD90E;
 }
 
@@ -57,29 +103,6 @@ main {
     background-color: #545654;
 }
 
-#homeArticle {
-
-}
-
-.aboutUsArtcl {
-    padding: 65px;       
-}
-
-.ourMissionArtcl {
-    padding: 0 65px;
-    margin-top: 50px;
-    font-size: 20px;
-    font-weight: bold;
-    font-family: Garamond, Georgia, Serif;
-}
-
-.ourMissionArtcl:last-of-type {
-    padding-bottom: 65px;
-}
-
-.submitATipArtcl {
-    padding: 0 65px 65px 65px;
-}
 
 .contactsArtcl {
     padding: 65px;
@@ -96,7 +119,6 @@ label {
     font-size: 20px;    
     font-weight: bold;
     color: #BEBEBE;
-    font-family: Garamond, Georgia, Serif;
     vertical-align: top;
 }
 
@@ -106,7 +128,6 @@ label {
     font-size: 20px;    
     background-color: black;
     color: #BEBEBE;
-    font-family: Garamond, Georgia, Serif;
     border: 1px solid #BEBEBE;
 }
 
@@ -116,7 +137,6 @@ label {
     font-size: 15px;    
     background-color: black;
     color: #BEBEBE;
-    font-family: Garamond, Georgia, Serif;
     border: 1px solid #BEBEBE;
 }
 
@@ -125,7 +145,6 @@ label {
     width: 510px;
     resize: none;
     background-color: black;
-    font-family: Garamond, Georgia, Serif;
     color: #BEBEBE;
 }
 
@@ -135,32 +154,7 @@ label {
     resize: none;
     font-size: 15px; 
     background-color: black;
-    font-family: Garamond, Georgia, Serif;
     color: #BEBEBE;
-}
-
-.aboutUsInfo {
-    height: 100px;
-    margin-top: 15px;
-}
-
-.aboutUsInfo::after{
-    content:"";
-    zoom:1;
-    display:block;
-    clear:both;
-}
-
-.personalDescription {
-    height: 100%;
-    width: 75%;
-    margin-top: 15px;
-    display: inline-block;
-    float: right;
-    font-size: 15px;
-    font-family: Garamond, Georgia, Serif;
-    color: #000;
-    font-weight: bold;
 }
 
 #contactsContainer {
@@ -185,17 +179,14 @@ footer {
 h1 {
     font-size: 70px;
     line-height: 70px;
-    font-family: "Rockwell Condensed", Georgia, Serif;
-    padding-top: 20px;
+    margin: 20px 0 0;
     padding-left: 25px;
 }
 
 h2 {
     font-size: 40px;
     line-height: 40px;
-    font-family: "Rockwell Condensed", Georgia, Serif;
-    padding-top: 15px;
-    padding-left: 80px;
+    margin: 20px 0;
 }
 
 h3 {
@@ -210,17 +201,14 @@ h3 {
 h4 {
     font-size: 35px;
     line-height: 35px;
-    padding: 65px 65px 0 65px;
-    font-family: Garamond, Georgia, Serif;
     color: #000;
     font-weight: bold;
+    margin: 0 0 20px;
 }
 
 h5 {
     font-size: 70px;
     line-height: 70px;
-    padding: 0 65px;
-    font-family: Garamond, Georgia, Serif;
     font-weight: bold;
 }
 
@@ -228,10 +216,19 @@ h6 {
     font-size: 18px;
     line-height: 18px;
     padding: 20px 0 0;
-    font-family: Garamond, Georgia, Serif;
 }
 
-.aboutUsInfo > figure {
+.aboutUsInfo {
+    margin-bottom: 20px;
+}
+.aboutUsInfo figure {
+    border: 6px solid #000;
+    background-color: #855C1E;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.aboutUsInfo figure img {
     display: inline-block;
 }
 
@@ -250,16 +247,16 @@ li {
 }
 
 #footerContainer {
-    height: 215px;
+    /*height: 215px;*/
     width: 90%;
     margin: 0 auto;
 }
 
 #footerContainer::after{
-    content:"";
-    zoom:1;
-    display:block;
-    clear:both;
+    content: "";
+    zoom: 1;
+    display: block;
+    clear: both;
 }
 
 dl {
@@ -284,35 +281,45 @@ dd {
     padding-left: 10px;
 }
 
-.headerMenu {
+a {
+    color: #F5D20A;
+    text-decoration: none;
+}
+
+h1 a {
+    color: #000;
+}
+
+nav a {
     height: 50px;
     width: 100%;
     display: block;
     font-size: 30px;
     text-align: center;
-    font-family: "Rockwell Condensed", Georgia, Serif;
-    text-decoration: none;
     padding-top: 20px;
     background-color: #191919;
-    color: #F5D20A;
+}
+
+nav li a:hover {
+    background-color: #F5D20A;
+    color: #202020;
+}
+
+main a {
+    font-weight: bold;
+}
+main a:hover {
+    text-decoration: underline;
+}
+a.more {
+    text-shadow: 1px 1px 10px #8E6623;
 }
 
 .personalInfo {
     font-size: 20px;
-    font-family: "Segoe UI", Georgia, Serif;
     color: #fff;
     font-weight: lighter;
     text-decoration: none;
-}
-
-h6 > a {
-    text-decoration: none;
-    color: #000;
-}
-
-li > a:hover {
-    background-color: #F5D20A;
-    color: #202020;
 }
 
 .personalInfo:hover {
@@ -321,6 +328,14 @@ li > a:hover {
 }
 
 @media all and (max-width: 960px){
+    
+    .one-third {
+        width: 27.5%;
+    }
+    .two-thirds {
+        width: 61%;
+    }
+
     body #container{
         width:100%;
     }
@@ -359,6 +374,14 @@ li > a:hover {
 }
 
 @media all and (max-width:780px){
+    
+    .one-third {
+        width: 26.5%;
+    }
+    .two-thirds {
+        width: 60%;
+    }
+
     body #container > header{
         text-align: center;
         height:100%;
@@ -413,6 +436,11 @@ li > a:hover {
 }
 
 @media all and (max-width:640px){
+    .one-third, 
+    .two-thirds {
+        width: 95.59%;
+    }
+
     body #container > footer{
         height:100%;
     }
@@ -422,6 +450,13 @@ li > a:hover {
 }
 
 @media all and (max-width:480px){
+
+    .one-third, 
+    .two-thirds {
+        width: 95.59%;
+    }
+
+
    body #container > footer dl{
         width:100%;
         text-align:center;

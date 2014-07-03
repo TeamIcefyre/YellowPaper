@@ -1,99 +1,30 @@
-﻿<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-    <meta charset="utf-8" />
-    <title>YellowPaper</title>
-    <link type="text/css" href="css/reset.css" rel="stylesheet" media="all" />
-    <link type="text/css" href="css/style.css" rel="stylesheet" media="all" />
-</head>
-<body>
-    <div id="container">
-        <header id="header">
-            <h1>Software &amp; Shock</h1>
-            <h2>Softuni in a different light.</h2>
-        </header>
-        <nav id="rotate">
-            <ul>
-                <li>
-                    <a class="headerMenu" href="index.html">News</a>
-                </li>
-                <li>
-                    <a class="headerMenu" href="aboutUs.html">About us</a>
-                </li>
-                <li>
-                    <a class="headerMenu" href="ourMission.html">Our Mission</a>
-                </li>
-                <li>
-                    <a class="headerMenu" href="submitATip.html">Submit a tip</a>
-                </li>
-                <li>
-                    <a class="headerMenu" href="contacts.html">Contact</a>
-                </li>
-            </ul>
-        </nav>
-        <main>
-            <section class="submitATipSection">
-                <header>
-                    <h4>
-                        Got a story? Want us to Investigate? 
-                    </h4>
-                    <h5>
-                        Tell US!
-                    </h5>
-                </header>
-                <article class="submitATipArtcl">
-                    <form>
-                        <div class="fieldDiv">
-                            <label for="yn">Your Name:</label>
-                            <input id="yn" type="text" autofocus tabindex="1" /><br />
-                        </div>
-                        <div class="fieldDiv">
-                            <label for="description">Description:</label>
-                            <input id="description" class="" type="text" tabindex="2" /><br />
-                        </div>
-                        <div class="fieldDiv">
-                            <label for="tip">Your Tip:</label>
-                            <textarea id="tip" name="tip" tabindex="3"></textarea><br />
-                        </div>                        
-                    </form>
-                </article>
-            </section>
-        </main>
-        <footer>
-            <h3>
-                Team "Icefyre"
-            </h3>
-            <div id="footerContainer">
-                <dl>
-                    <dt>Nikolai Bankin</dt>
-                    <dd><a class="personalInfo" href="https://github.com/bankin" target="_blank">Github</a></dd>
-                    <dd><a class="personalInfo" href="https://www.linkedin.com/pub/nikolay-bankin/51/993/5a4" target="_blank">LinkedIn</a></dd>
-                    <dd><a class="personalInfo" href="#" target="_blank">Blog</a></dd>
-                    <dd><a class="personalInfo" href="https://softuni.bg/users/profile/show/nikbikbank" target="_blank">Profile</a></dd>
-                </dl>
-                <dl>
-                    <dt>Yavor Milinov</dt>
-                    <dd><a class="personalInfo" href="https://github.com/AntyfrizZz" target="_blank">Github</a></dd>
-                    <dd><a class="personalInfo" href="https://www.linkedin.com/profile/view?id=328214119&amp;trk=nav_responsive_tab_profile" target="_blank">LinkedIn</a></dd>
-                    <dd><a class="personalInfo" href="http://milinov.wordpress.com/" target="_blank">Blog</a></dd>
-                    <dd><a class="personalInfo" href="https://softuni.bg/users/profile/show/antyfrizzz" target="_blank">Profile</a></dd>
-                </dl>
-                <dl>
-                    <dt>Asen Zhechev</dt>
-                    <dd><a class="personalInfo" href="#" target="_blank">Github</a></dd>
-                    <dd><a class="personalInfo" href="#" target="_blank">LinkedIn</a></dd>
-                    <dd><a class="personalInfo" href="#" target="_blank">Blog</a></dd>
-                    <dd><a class="personalInfo" href="https://softuni.bg/users/profile/show/keller" target="_blank">Profile</a></dd>
-                </dl>
-                <dl>
-                    <dt>Mina Dodunekova</dt>
-                    <dd><a class="personalInfo" href="https://github.com/minkas-g-d" target="_blank">Github</a></dd>
-                    <dd><a class="personalInfo" href="#" target="_blank">LinkedIn</a></dd>
-                    <dd><a class="personalInfo" href="http://bgkoreni.com/" target="_blank">Blog</a></dd>
-                    <dd><a class="personalInfo" href="https://softuni.bg/users/profile/show/minkas_g_d" target="_blank">Profile</a></dd>
-                </dl>
+﻿<?php include('header.php'); ?>
+            <div class="submitATipSection">
+                <section class="contact-us">
+                    <header>
+                        <h4>
+                            Надушили сте нещо? Искате да разследваме?
+                        </h4>
+                        <h5>
+                            Разкажете ни!
+                        </h5>
+                    </header>
+                    <div class="submitATipArtcl">
+                        <form>
+                            <div class="fieldDiv">
+                                <label for="yn">Име:</label>
+                                <input id="yn" type="text" autofocus tabindex="1" /><br />
+                            </div>
+                            <div class="fieldDiv">
+                                <label for="description">Тема:</label>
+                                <input id="description" class="" type="text" tabindex="2" /><br />
+                            </div>
+                            <div class="fieldDiv">
+                                <label for="tip">Описание:</label>
+                                <textarea id="tip" name="tip" tabindex="3"></textarea><br />
+                            </div>                        
+                        </form>
+                    </div>
+                </section>
             </div>
-        </footer>
-    </div>
-</body>
-</html>
+<?php include('footer.php'); ?>

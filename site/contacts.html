@@ -1,71 +1,29 @@
-﻿<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-    <meta charset="utf-8" />
-    <title>YellowPaper</title>
-    <link type="text/css" href="css/reset.css" rel="stylesheet" media="all" />
-    <link type="text/css" href="css/style.css" rel="stylesheet" media="all" />
-</head>
-<body>
-    <div id="container">
-        <header id="header">
-            <h1>Software &amp; Shock</h1>
-            <h2>Softuni in a different light.</h2>
-        </header>
-        <nav id="rotate">
-            <ul>
-                <li>
-                    <a class="headerMenu" href="index.html">News</a>
-                </li>
-                <li>
-                    <a class="headerMenu" href="aboutUs.html">About us</a>
-                </li>
-                <li>
-                    <a class="headerMenu" href="ourMission.html">Our Mission</a>
-                </li>
-                <li>
-                    <a class="headerMenu" href="submitATip.html">Submit a tip</a>
-                </li>
-                <li>
-                    <a class="headerMenu" href="contacts.html">Contact</a>
-                </li>
-            </ul>
-        </nav>
-        <main>
-            <section class="contactsSection">
-                <article class="contactsArtcl">
+﻿<?php include('header.php'); ?>
+            <div class="contactsSection">
+                <section class="contact-us">
                     <div id="contactsContainer">
-                        <h6>
-                            Software & Shock LTD<br />
-                            <a href="index.html" target="_blank">https://website.com</a>
-                        </h6>
-                        <h6>
-                            Vasil Kanchev 21, Business Center Stefan Karadjha, fl. 4, 1305 Sofia.<br />
+                        <h4>Онлайн Вестник Жълтурче<br />
+                            <a href="index.html" target="_blank">yellowpaper.atwebpages.com</a>
+                        </h4>
+                        <p>
+                            Vasil Kanchev 21, Business Center Stefan Karadjha, fl. 4, 1305 Sofia.<br />
                             Tel/Fax. 087831415
-                        </h6>
-                        <h6>
+                        </p>
+                        <p>
                             k.k "Chaika", Yanko Slavchev 53, 9007 Varna.<br />
                             Tel/Fax: 052/555-166
-                        </h6>
-                        <h6>
+                        </p>
+                        <p>
                             Publishing dept. <br />
                             tel: 08003142
-                        </h6>
-                        <h6>
-                            Business-related Inquiries:<br />
+                        </p>
+                        <p>
+                            Business-related Inquiries: <br />
                             tel/fax: 09003159
-                        </h6>
-                        <h6>
+                        </p>
+                        <p>
                             or contact us by E-mail:
-                        </h6>
-                        <form>
-                            <div class="fieldDiv">
-                                <input id="emailContact" type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" placeholder="Your Email" tabindex="2" /><br />
-                            </div>
-                            <div class="fieldDiv">
-                                <textarea id="message" name="tip" placeholder="Your Message" tabindex="2"></textarea><br />
-                            </div>             
-                        </form>
+                        </p>
                     </div>
                     <div id="mapContainer">
                         <figure>
@@ -75,44 +33,6 @@
                             <img src="img/secondMap.png" alt="secondMap" title="Our Address" height="290px" width="320px" />
                         </figure>
                     </div>
-                </article>
-            </section>
-        </main>
-        <footer>
-            <h3>
-                Team "Icefyre"
-            </h3>
-            <div id="footerContainer">
-                <dl>
-                    <dt>Nikolai Bankin</dt>
-                    <dd><a class="personalInfo" href="https://github.com/bankin" target="_blank">Github</a></dd>
-                    <dd><a class="personalInfo" href="https://www.linkedin.com/pub/nikolay-bankin/51/993/5a4" target="_blank">LinkedIn</a></dd>
-                    <dd><a class="personalInfo" href="#" target="_blank">Blog</a></dd>
-                    <dd><a class="personalInfo" href="https://softuni.bg/users/profile/show/nikbikbank" target="_blank">Profile</a></dd>
-                </dl>
-                <dl>
-                    <dt>Yavor Milinov</dt>
-                    <dd><a class="personalInfo" href="https://github.com/AntyfrizZz" target="_blank">Github</a></dd>
-                    <dd><a class="personalInfo" href="https://www.linkedin.com/profile/view?id=328214119&amp;trk=nav_responsive_tab_profile" target="_blank">LinkedIn</a></dd>
-                    <dd><a class="personalInfo" href="http://milinov.wordpress.com/" target="_blank">Blog</a></dd>
-                    <dd><a class="personalInfo" href="https://softuni.bg/users/profile/show/antyfrizzz" target="_blank">Profile</a></dd>
-                </dl>
-                <dl>
-                    <dt>Asen Zhechev</dt>
-                    <dd><a class="personalInfo" href="#" target="_blank">Github</a></dd>
-                    <dd><a class="personalInfo" href="#" target="_blank">LinkedIn</a></dd>
-                    <dd><a class="personalInfo" href="#" target="_blank">Blog</a></dd>
-                    <dd><a class="personalInfo" href="https://softuni.bg/users/profile/show/keller" target="_blank">Profile</a></dd>
-                </dl>
-                <dl>
-                    <dt>Mina Dodunekova</dt>
-                    <dd><a class="personalInfo" href="https://github.com/minkas-g-d" target="_blank">Github</a></dd>
-                    <dd><a class="personalInfo" href="#" target="_blank">LinkedIn</a></dd>
-                    <dd><a class="personalInfo" href="http://bgkoreni.com/" target="_blank">Blog</a></dd>
-                    <dd><a class="personalInfo" href="https://softuni.bg/users/profile/show/minkas_g_d" target="_blank">Profile</a></dd>
-                </dl>
+                </section>
             </div>
-        </footer>
-    </div>
-</body>
-</html>
+<?php include('footer.php'); ?>
