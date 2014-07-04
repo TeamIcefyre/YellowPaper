@@ -57,8 +57,6 @@ jQuery(document).ready(function($) {
     				if( data == 'false' ) {
     					mailsendstatus = false;
     					$( '#captchalabel' ).closest('.fieldDiv').children( '.err' ).fadeIn( 'slow' );
-    					console.log('in the false');
-    					console.log($( '#captchalabel' ).closest('.fieldDiv').children( '.err' ));
     				}
     				else if( data == 'true' ){
     					$( '#captchalabel' ).closest('.fieldDiv').children( '.err' ).fadeOut( 'slow' );
